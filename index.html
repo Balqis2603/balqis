@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Penjelasan Program Kivy</title>
 </head>
-<h1>bal qis</h1>
-<h2>22111019</h2>
 <body>
-    
+  <h1>Penjelasan Program Python - Kivy</h1>
+  <p><strong>Tujuan:</strong> Menampilkan tombol di tengah layar menggunakan GUI framework Kivy.</p>
+
+  <h2>Penjelasan Baris per Baris:</h2>
+  <ul>
+    <li><code>from kivy.app import App</code>: Mengimpor kelas utama untuk membuat aplikasi Kivy.</li>
+    <li><code>from kivy.uix.button import Button</code>: Untuk membuat tombol.</li>
+    <li><code>from kivy.uix.floatlayout import FloatLayout</code>: Layout fleksibel untuk atur posisi elemen.</li>
+    <li><code>from kivy.core.window import Window</code>: Untuk mengatur warna latar aplikasi.</li>
+    <li><code>from kivy.utils import get_color_from_hex</code>: Untuk mengubah warna dari format hex ke Kivy.</li>
+    <li><code>Window.clearcolor = ...</code>: Mengatur latar belakang aplikasi menjadi warna abu-abu muda.</li>
+    <li><code>btn1 = Button(...)</code>: Membuat tombol dengan ukuran dan posisi tertentu.</li>
+    <li><code>btn1.background_color = ...</code>: Mengubah warna tombol.</li>
+    <li><code>f_layout.add_widget(btn1)</code>: Menambahkan tombol ke dalam layout.</li>
+    <li><code>return f_layout</code>: Menampilkan layout sebagai tampilan utama aplikasi.</li>
+    <li><code>MyApp().run()</code>: Menjalankan aplikasi Kivy.</li>
+  </ul>
+
+  <h2>Link ke Program:</h2>
+  <p><a href="https://github.com/usernamekamu/namarepo" target="_blank">Klik untuk lihat program di GitHub</a></p>
 </body>
 </html>
