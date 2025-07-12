@@ -2,28 +2,86 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Penjelasan Program Kivy</title>
+  <title>Penjelasan Program Kivy - Tombol di Tengah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 30px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #006699;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 30px;
+    }
+
+    ul {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    /* Link GitHub disembunyikan */
+    a.hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Penjelasan Program Python - Kivy</h1>
-  <p><strong>Tujuan:</strong> Menampilkan tombol di tengah layar menggunakan GUI framework Kivy.</p>
 
-  <h2>Penjelasan Baris per Baris:</h2>
+  <h1>Penjelasan Program Python Kivy</h1>
+  <p><strong>Tujuan Program:</strong> Menampilkan tombol di tengah layar menggunakan <em>GUI Framework</em> <strong>Kivy</strong>, dengan pengaturan warna latar belakang dan layout yang fleksibel.</p>
+
+  <h2>Penjelasan Baris per Baris Kode:</h2>
   <ul>
-    <li><code>from kivy.app import App</code>: Mengimpor kelas utama untuk membuat aplikasi Kivy.</li>
-    <li><code>from kivy.uix.button import Button</code>: Untuk membuat tombol.</li>
-    <li><code>from kivy.uix.floatlayout import FloatLayout</code>: Layout fleksibel untuk atur posisi elemen.</li>
-    <li><code>from kivy.core.window import Window</code>: Untuk mengatur warna latar aplikasi.</li>
-    <li><code>from kivy.utils import get_color_from_hex</code>: Untuk mengubah warna dari format hex ke Kivy.</li>
-    <li><code>Window.clearcolor = ...</code>: Mengatur latar belakang aplikasi menjadi warna abu-abu muda.</li>
-    <li><code>btn1 = Button(...)</code>: Membuat tombol dengan ukuran dan posisi tertentu.</li>
-    <li><code>btn1.background_color = ...</code>: Mengubah warna tombol.</li>
-    <li><code>f_layout.add_widget(btn1)</code>: Menambahkan tombol ke dalam layout.</li>
-    <li><code>return f_layout</code>: Menampilkan layout sebagai tampilan utama aplikasi.</li>
-    <li><code>MyApp().run()</code>: Menjalankan aplikasi Kivy.</li>
+    <li><code>from kivy.app import App</code>: Mengimpor kelas dasar <code>App</code> yang digunakan untuk membuat dan menjalankan aplikasi Kivy.</li>
+
+    <li><code>from kivy.uix.button import Button</code>: Mengimpor komponen <code>Button</code> untuk membuat tombol dalam aplikasi.</li>
+
+    <li><code>from kivy.uix.floatlayout import FloatLayout</code>: Mengimpor <code>FloatLayout</code>, yaitu layout fleksibel yang memungkinkan penempatan widget secara bebas menggunakan <code>pos_hint</code>.</li>
+
+    <li><code>from kivy.core.window import Window</code>: Mengimpor objek <code>Window</code> untuk mengatur tampilan jendela aplikasi seperti warna latar belakang.</li>
+
+    <li><code>from kivy.utils import get_color_from_hex</code>: Mengimpor fungsi untuk mengubah kode warna <code>hex</code> (misalnya <code>#eeeeee</code>) menjadi format warna Kivy (RGBA).</li>
+
+    <li><code>Window.clearcolor = get_color_from_hex('#eeeeee')</code>: Mengatur warna latar belakang jendela aplikasi menjadi abu-abu muda.</li>
+
+    <li><code>btn1 = Button(text='btn1', size_hint=(0.2, 0.2), pos_hint={'x': 0.4, 'y': 0.4})</code>: Membuat tombol dengan teks "btn1", ukuran 20% dari layar, dan diletakkan di tengah menggunakan <code>pos_hint</code>.</li>
+
+    <li><code>btn1.background_color = get_color_from_hex('#aaaaaa')</code>: Mengubah warna latar belakang tombol menjadi abu-abu gelap.</li>
+
+    <li><code>f_layout = FloatLayout()</code>: Membuat objek <code>FloatLayout</code> sebagai layout utama aplikasi.</li>
+
+    <li><code>f_layout.add_widget(btn1)</code>: Menambahkan tombol <code>btn1</code> ke dalam layout agar tampil di aplikasi.</li>
+
+    <li><code>return f_layout</code>: Mengembalikan layout sebagai tampilan utama aplikasi saat dijalankan.</li>
+
+    <li><code>MyApp().run()</code>: Menjalankan aplikasi Kivy yang telah dibuat.</li>
   </ul>
 
-  <h2>Link ke Program:</h2>
-  <p><a href="https://github.com/usernamekamu/namarepo" target="_blank">Klik untuk lihat program di GitHub</a></p>
+  <!-- Link GitHub disimpan tapi tidak ditampilkan -->
+  <a href="https://github.com/usernamekamu/namarepo" class="hidden">GitHub Repo</a>
+
 </body>
 </html>
+
+
+
